@@ -5,7 +5,7 @@ clickApp.controller("clickController", ($scope)=>{
 	console.log('test')
 	$scope.test = "is this working";
 	$scope.students = [];
-	$scope.tasks = []
+	$scope.tasks = [];
 	$scope.handleClick = function(){
 		console.log("You clicked");
 		$scope.students.push($scope.studentName);
@@ -18,6 +18,9 @@ clickApp.controller("clickController", ($scope)=>{
 			name: $scope.task,
 			date: $scope.taskDate
 		})
+		$scope.task = "";
+		$scope.date = "";
+		$scope.taskFilter = "";
 	}
 
 
