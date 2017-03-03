@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- ng-app tag tells angular that it has authority over everything in this element - like  -->
+<!-- reactDom.render{
+<App>
+<Document.getElementById="root">} -->
+<html ng-app>
+<head>
+	<title>Learn Angular!</title>
+	<!-- step 1 - pull in angular from google -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body>
+
+Name:<input ng-model="firstName" type="text"/>
+Name:<input ng-model="lastName" type="text"/>
+<hr/>
+Hello {{firstName}} {{lastName}} !
+
+
+</body>
+</html>
